@@ -1,13 +1,14 @@
 //suma impares de un array;
 function sumaTodosImpares(array){  
     let acumulador=0  
-    for (let i=0;i< array.length;i++){
-        if(esImpar(array[i])){
-            acumulador+=array[i]
+    for (let numero of array){
+        // console.log(numero)
+        if(esImpar(numero)){
+            acumulador+= numero
         }
     }
-return acumulador
-    }
+    return acumulador
+}
 
 // console.log(sumaTodosImpares(array))
 function esImpar(numero){
@@ -16,6 +17,6 @@ function esImpar(numero){
     }
     return true
 }
-console.log(sumaTodosImpares([1,2,3,4,5]))
+console.log(sumaTodosImpares([1,2,3,4,5,6,7]));
 
 
